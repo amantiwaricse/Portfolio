@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Aman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b8ed700eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificate">Certifications</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Aman Tiwari</span><br>From India</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------About Me ---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/aman1.jpg" id="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>I am a computer science student eager to begin my career as a Software Engineer. I have a solid foundation in core Java with hands-on experience in basic DSA and Frontend development using HTML and CSS. My academic projects and internships have equipped me with skills in Frontend development, databases (SQL), and agile methodologies. I am passionate about continuous learning and excited to contribute to innovative projects in a collaborative environment. Let’s connect to discuss technology, software development, and potential opportunities.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Designing Web Page Layout</li>
+                            <li><span>CSS</span><br>Styling Of Web Pages</li>
+                            <li><span>JAVA</span><br>Programing Language</li>
+                            <li><span>SQL</span><br>Database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Web Developer Intern at Codsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.tech CSE From AKTU</li>
+                            <li><span>2020</span><br>12th Standard From CBSE</li>
+                            <li><span>2018</span><br>10th Standard From CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------Certifications---- -->
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="certificate-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Cyber Suraksha</h2>
+                    <p>I completed this wonderful virtual 40-hour course about Cyber Suraksha(Security) by Microsoft along with TATA Strive in Nov 2023.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Internship Completion</h2>
+                    <p>I completed this internship in august 2023 as a web developer intern.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-comment"></i>
+                    <h2>Runner up in Speech Competition</h2>
+                    <p>I won this certificate along with the price in my collage fest "Crossroads" in nov 2022.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Portfolio-------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Calculator.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>The Calculator is fully functioning and performs all the arithmetic operation shown on the calculator.</p>
+                        <a href="https://668346618c216bc72febeb1e--lambent-pithivier-b18d13.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Ecommerce.png">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>This is an E-Commerce Website exactly the clone of Flipkart. It has all the listed products and banners along with search bar, header, footer etc.</p>
+                        <a href="https://github.com/amantiwaricse/Flipkart-Clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/expence.png">
+                    <div class="layer">
+                        <h3>Expense Tracker</h3>
+                        <p>It is an Expense Tracker developed by using HTML, CSS, JS. It records all the expences along with some details.</p>
+                        <a href="https://6683489d2dd650b2969cf4ba--euphonious-vacherin-cdfd10.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------contact------ -->
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> amantiwari9873@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9873001971</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/amantiwaricse"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/aman-tiwari-9b8a5223b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/amantiwaricse"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/amantiwaricse/"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                    <a href="Images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Made by Aman <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCn_T5CcTfJ8qSz5wz2S6u1byzZCQamw0Usnh9oRNtooruXi8ANq0Q5MHFQAWi0T9Upg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
